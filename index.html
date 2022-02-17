@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,25 @@
     <title>Acceuil - Said fekih</title>
 </head>
 
-<body>
-    <div class="app" id="app">
-        <div class="navigation-bar">
-
+<div class="app" id="app">
+    <header>
+        <a class="logo" href="">{{user}}</a>
+        <div class="navigation">
+            <a href="">Sing up</a>
         </div>
-        <div class="navigation-main" >
-            <p style="font-size: 38px;">{{user}}</p>
-            <a id="said" onclick="hello()">said</a>
-        </div>
-        <div class="control-panel">
+    </header>
 
+    <body>
+        <div class="container">
+            <div class="nav-main">
+                <p style="font-size: 38px;">{{user}}</p>
+                <a id="said" onclick="hello()">said</a>
+            </div>
+            <div class="control-panel"></div>
         </div>
-    </div>
 
-</body>
+    </body>
+</div>
 
 </html>
 

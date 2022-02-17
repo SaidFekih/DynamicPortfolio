@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Acceuil - Said fekih</title>
 </head>
+
 <body>
     <div class="app" id="app">
         <div class="navigation-bar">
@@ -15,18 +15,17 @@
         </div>
         <div class="navigation-main" >
             <p style="font-size: 38px;">{{user}}</p>
+            <a id="said" onclick="hello()">said</a>
         </div>
         <div class="control-panel">
 
         </div>
     </div>
+
 </body>
+
 </html>
-<script>
-    var app = new Vue({
-        el:"#app",
-        data:{
-            user:"Said - Fekih"
-        }
-    })
-</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="vue.vue"></script>
+<script src="main.js"></script>

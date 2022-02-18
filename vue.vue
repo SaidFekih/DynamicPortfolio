@@ -2,6 +2,8 @@
  var app = new Vue({
         el:"#app",
         data:{
-            user:"Said - Fekih"
+            user:"Said - Fekih",
+            langue:"Francais",
+            
         }
     })

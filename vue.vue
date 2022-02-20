@@ -3,7 +3,6 @@
         el:"#app",
         data:{
             user:"Said - Fekih",
-            langue:"Francais",
-            
-        }
+            btn:true,
+        },
     })

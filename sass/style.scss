@@ -1,20 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nosifer&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nosifer&family=Press+Start+2P&family=Redressed&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Modak&family=Nosifer&family=Press+Start+2P&family=Redressed&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Modak&family=Nosifer&family=Press+Start+2P&family=Redressed&family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import "libs/colors.scss";
+
 
 *{
-    font-family: 'Fira Sans', sans-serif;
-    margin: 0;
+
+    font-family: 'Nosifer', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Mono', monospace;    margin: 0;
+    font-family: 'Modak', cursive;
+    font-family: 'Redressed', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Righteous', cursive;
+
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 16px;
+    a{
+        text-decoration: none;
+    }
 }
-a{
-    text-decoration: none;
-}
+
 header{
     position: fixed;
     display: flex;
-    background: #1C5588 ;
+    background: $primary ;
     width: 100%;
     max-height: 100px;
     align-items: center;
@@ -27,28 +43,31 @@ header{
     color: #FFF;
     font-size: 1.1em;
     padding:0.3em 1.2em;
-    background: #7ACFB0;
-    border: 1px solid #00BDC8;
+    background: $secondary;
+    border: 1px solid $quaternary;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
-    margin:5px;
+    margin:5px;  
+    
+    &:hover{
+        background: $tertiary;
+        color: $quaternary;
+        transform: scale(1.1);
+    }
 }
-.btn:hover{
-    background: #FBCE9E;
-    color: #00BDC8;
-}
+
 .logo{
     font-size: 2.25em;
     font-weight: 400; 
-    color: #FBCE9E;
+    color: $tertiary;
 }
 .navigation a{
     display: flex;
     color: #FFF;
     font-size: 1.5em;
     padding:0.4em 1em;
-    background: #7ACFB0;
-    border: 1px solid #00BDC8;
+    background: $secondary;
+    border: 1px solid $quaternary;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
@@ -60,7 +79,7 @@ header{
 }
 .nav-main{
     width: 51.80em;
-    border: solid 2px #1C5588;
+    border: solid 2px $primary;
     margin-right: 0.3em;
     border-radius: 5px;
 }
@@ -70,13 +89,13 @@ header{
 
 }
 .control-panel h3{
-    color: #1C5588;
+    color: $primary;
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 10px;
 }
 .color-control{
-    border: solid 2px #1C5588;
+    border: solid 2px $primary;
     border-radius: 5px;
     width: 100%;
     flex-wrap: wrap;
